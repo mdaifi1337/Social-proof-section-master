@@ -1,0 +1,242 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'League spartan';
+	font-size: 15px;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 75px 0;
+	height: 100vh;
+}
+
+.topBg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.bottomBg {
+	display: none;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	padding: 25px;
+	width: 100%;
+	height: 100%;
+}
+
+.topHalf {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+h1 {
+	margin-top: 0;
+	font-size: 38px;
+	font-weight: 700;
+	line-height: 30px;
+	color: hsl(300, 43%, 22%);
+	text-align: center;
+}
+
+p {
+	text-align: center;
+	color: hsl(303, 10%, 53%);
+	font-weight: 500;
+	line-height: 24px;
+	font-size: 17.3px;
+	margin-bottom: 0;
+}
+
+.ratings {
+	display: flex;
+	flex-direction: column;
+	gap: 17px;
+}
+
+.ratingCard {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 13px;
+	background-color: hsl(300, 24%, 96%);
+	padding: 13px 0;
+	border-radius: 8px;
+}
+
+.stars {
+	display: flex;
+	gap: 7.5px;
+}
+
+.ratingText {
+	color: hsl(300, 43%, 22%);
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.cards {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin-top: 10px;
+}
+
+.cards img {
+	border-radius: 50%;
+	height: 100%;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	background-color: hsl(300, 43%, 22%);
+	color: #fff;
+	padding: 35px;
+	border-radius: 8px;
+}
+
+.cardHeader {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	height: 40px;
+}
+
+.cardHeaderInfo {
+	display: flex;
+	flex-direction: column;
+	gap: 0px;
+}
+
+.name {
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.status {
+	color: hsl(333, 80%, 67%);
+	font-weight: 400;
+	letter-spacing: 0.5px;
+}
+
+.cardContent {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+}
+
+@media (min-width: 600px) {
+	body {
+		height: 100vh;
+	}
+
+	.main {
+		padding: 0 165px;
+		max-width: 1440px;
+	}
+
+	.bottomBg {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: -1;
+	}
+
+	.topHalf {
+		flex-direction: row;
+		/* justify-content: space-between; */
+		gap: 150px;
+		width: 100%;
+	}
+
+	.description {
+		width: 410px;
+	}
+
+	h1 {
+		text-align: left;
+		font-size: 50px;
+		line-height: 46px;
+	}
+
+	p {
+		text-align: left;
+		font-size: 17px;
+	}
+
+	.ratings {
+		gap: 20px;
+		width: 450px;
+	}
+
+	.ratingCard {
+		flex-direction: row;
+		justify-content: flex-start;
+		gap: 25px;
+		padding: 20px 30px;
+		width: 100%;
+		align-self: flex-start;
+	}
+
+	.ratingCard:nth-child(2) {
+		margin-left: 50px;
+	}
+
+	.ratingCard:nth-child(3) {
+		margin-left: 100px;
+	}
+
+	.ratingText {
+		color: hsl(300, 43%, 22%);
+		font-weight: 700;
+		font-size: 15px;
+	}
+
+	.cards {
+		flex-direction: row;
+		gap: 30px;
+	}
+
+	.card {
+		width: 350px;
+		height: 245px;
+		padding: 37px;
+	}
+
+	.card:nth-child(2) {
+		margin-top: 25px;
+	}
+
+	.card:nth-child(3) {
+		margin-top: 50px;
+	}
+
+}
